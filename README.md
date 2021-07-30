@@ -78,7 +78,7 @@ I want to know food prices | Please enter the details with the below format: Pre
 
 ## Demo video
 
-[![Watch the video](doc/source/images/video.png)](https://www.youtube.com/watch?v=lP_gNI73KBU&ab_channel=KenechukwuNnodu/)
+![Watch the video](https://www.youtube.com/watch?v=lP_gNI73KBU&ab_channel=KenechukwuNnodu/)
 
 
 ## Long description
