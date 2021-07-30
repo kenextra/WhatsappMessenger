@@ -49,10 +49,10 @@ If you want to deploy similar application, please follow these steps
 
 ### 1. Clone the repo
 
-Clone the `code-engine-dsnbot` repo locally. In a terminal, run:
+Clone the `WhatsappMessenger` repo locally. In a terminal, run:
 
 ```bash
-git clone https://github.com/kenextra/code-engine-dsnbot
+git clone https://github.com/kenextra/WhatsappMessenger
 ```
 
 We’ll be using the folder [`backend-for-whatsapp`](backend-for-whatsapp)
