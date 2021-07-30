@@ -5,7 +5,7 @@ Whatsapp-based bot, for agriculture news, price prediction and search options.
 
 [Github Repository](https://github.com/kenextra/WhatsappMessenger)
 
-[Link to 3 minutes video](https://www.youtube.com/watch?v=lP_gNI73KBU&ab_channel=KenechukwuNnodu)
+[Link to 3 minutes video](https://www.youtube.com/watch?v=lP_gNI73KBU&ab_channel=KenechukwuNnodu/)
 
 
 ## Long Description:

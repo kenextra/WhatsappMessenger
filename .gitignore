@@ -133,10 +133,5 @@ backend-for-whatsapp/static/watsoncredentials/*.json
 backend-for-whatsapp/static/watsonservices/*.json
 backend-for-whatsapp/*.json
 
-<<<<<<< HEAD
-# vscode
-.vscode/
-=======
 # Vscode
 .vscode
->>>>>>> f75b94b63f0fc2110cbb37dd47b7ee9ebaa1a1b4

@@ -14,12 +14,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.model_selection import train_test_split
-<<<<<<< HEAD
-from scipy.stats import boxcox
-from scipy.special import inv_boxcox
-=======
 from sklearn.compose import TransformedTargetRegressor
->>>>>>> update_html
 from twilio.twiml.messaging_response import MessagingResponse
 from ibm_watson_machine_learning import APIClient
 from twilio.rest import Client
@@ -104,11 +99,7 @@ def getDeploymentState():
                 "modelName": model_name,
             }
         )
-<<<<<<< HEAD
-    except Exception as e:
-=======
     except Exception:
->>>>>>> update_html
         return jsonify({"status": "Model not Deployed"})
 
 
@@ -218,16 +209,6 @@ def deployWMLModel():
     published_model = client.repository.store_model(model, meta_props=metadata)
 
     published_model_uid = client.repository.get_model_uid(published_model)
-<<<<<<< HEAD
-    # model_details = client.repository.get_details(published_model_uid)
-
-    # print(json.dumps(model_details, indent=2))
-
-    # models_details = client.repository.list_models()
-
-    # loaded_model = client.repository.load(published_model_uid)
-=======
->>>>>>> update_html
 
     deploy_meta = {
         client.deployments.ConfigurationMetaNames.NAME: "Deployment of Food Data Price Prediction",
@@ -448,13 +429,9 @@ def index():
         global sentMsg
         receivedMsg = respo.get("Body")
 
-<<<<<<< HEAD
-        if str(respo.get("Body")).strip().lower() == "what can you do?":
-=======
         trans = str.maketrans('', '', string.punctuation)
 
         if str(respo.get("Body")).strip().lower().translate(trans) == "what can you do":
->>>>>>> update_html
             client = Client(account_sid, auth_token)
             to_ = respo.get("From")
             from_ = respo.get("To")
@@ -467,11 +444,7 @@ def index():
             sentMsg = "I am a bot who is connected to watson services on IBM Cloud! \nTry asking *What are the services you are connected to?*"
             return message.sid
 
-<<<<<<< HEAD
-        if str(respo.get("Body")).strip().lower() == "what are the services you are connected to?":
-=======
         if str(respo.get("Body")).strip().lower().translate(trans) == "what are the services you are connected to":
->>>>>>> update_html
 
             to_ = respo.get("From")
             from_ = respo.get("To")
@@ -528,11 +501,7 @@ def index():
 
             return str(resp)
 
-<<<<<<< HEAD
-        if respo.get("Body").strip().lower() == "i want to know food prices":
-=======
         if respo.get("Body").strip().lower().translate(trans) == "i want to know food prices":
->>>>>>> update_html
             message = "Please enter the details with the below format:\n\n*Predict:<Country>,<Item>*\n\nExample: *Predict:Germany,Apples*"
             resp = MessagingResponse()
             resp.message(message)
@@ -563,11 +532,7 @@ def index():
             sentMsg = messageTxt
             return message.sid
 
-<<<<<<< HEAD
-        if respo.get("Body").strip().lower() == "news":
-=======
         if respo.get("Body").strip().lower().translate(trans) == "news":
->>>>>>> update_html
             message = get_news()
             resp = MessagingResponse()
             resp.message(message)
