@@ -38,6 +38,9 @@ By providing access to useful information to independent farmers and co-ops thro
 
 To improve access to information using technologies that are already accessible and familiar to farmers and co-ops so they don't have to learn new technology.
 
+## Demo video
+
+[Watch the video](https://www.youtube.com/watch?v=lP_gNI73KBU&ab_channel=KenechukwuNnodu/)
 
 ## The architecture
 
@@ -74,11 +77,7 @@ What can you do? | I am a bot who is connected to watson services on IBM Cloud! 
 What are the services you are connected to? | I found the following services associated to me: 1. Watson Machine Learning -> *ready* Enter the number to know more. 2. Watson Visual Recognition -> No Custom Model Deployed 3. Watson Assistant -> For Agriculture News| ![3](doc/source/images/whatsappss/third.PNG)
 1 | WML Model id: *xxxx-xxxx-xxxx* WML Model Name: *Deployment of Food Price Prediction* WML Model Status: *ready* Try asking <b>I want to know food prices</b> | ![4](doc/source/images/whatsappss/fourth.PNG)
 I want to know food prices | Please enter the details with the below format: Predict:`<Country>`,`<Item>`, Example: Predict:Germany,Apples | ![6](doc/source/images/whatsappss/fifth.PNG)
-3 | Watson Assistant Type <b>News</b> for Agriculture News | ![7](doc/source/images/whatsappss/sixth.PNG)
-
-## Demo video
-
-[Watch the video](https://www.youtube.com/watch?v=lP_gNI73KBU&ab_channel=KenechukwuNnodu/)
+2 | Watson Assistant Type <b>News</b> for Agriculture News | ![7](doc/source/images/whatsappss/sixth.PNG)
 
 
 ## Long description
