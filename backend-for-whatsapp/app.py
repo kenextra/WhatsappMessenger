@@ -304,8 +304,6 @@ def createImagePrediction(area, item, price, dt_day):
 def checkServices(to_, from_, client):
     try:
         files = scanAvailableFiles(app.config["CREDENTIALS"])
-        if '.gitkeep' in files:
-            _ = files.pop(files.index('.gitkeep'))
         # print(files)
         idx = 0
         inx = 1
@@ -402,6 +400,8 @@ def checkServices(to_, from_, client):
 
 def scanAvailableFiles(path):
     availableFiles = os.listdir(path)
+    if '.gitkeep' in availableFiles:
+        availableFiles.pop(availableFiles.index('.gitkeep'))
     return availableFiles
 
 
